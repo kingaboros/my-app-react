@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <h2> Hello from App </h2>
-      <p> This is also visible </p>
+
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
