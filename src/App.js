@@ -1,4 +1,5 @@
-import ExpenseItem from "./components/ExpenseItem";
+import React from "react";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
 
 function App() {
   const expenses = [
@@ -22,6 +23,15 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  ///////////////// This is what happens under the hood when writing JSX code
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let's get started!"),
+  //   React.createElement(Expenses, { items: expenses}),
+
+  // )
 
   return (
     <div className="App">
